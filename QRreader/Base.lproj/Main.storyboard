@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QRreader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.png" translatesAutoresizingMaskIntoConstraints="NO" id="lMB-e4-FPf">
+                                <rect key="frame" x="49" y="195" width="276" height="276"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lMB-e4-FPf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4AI-Oc-1n6"/>
+                            <constraint firstItem="lMB-e4-FPf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gAU-i6-mc9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="square" destination="lMB-e4-FPf" id="gll-8P-azK"/>
+                        <segue destination="wlQ-ma-DiF" kind="show" identifier="toHome" id="rwA-xb-IAF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TQS-zX-v0z">
+            <objects>
+                <viewController id="TQm-cO-DLr" customClass="ARViewController" customModule="QRreader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vuk-1b-00f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PWD-bI-MPb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7n-ob-Wgd">
+                                <rect key="frame" x="163" y="617" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="Record:" destination="TQm-cO-DLr" eventType="touchUpInside" id="bWz-u1-6kY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="GFj-W3-fDs"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="PWD-bI-MPb" id="7bS-PO-Xkt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vuR-Sc-2Bk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="960.79999999999995" y="118.29085457271366"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="fLM-1e-iDk">
+            <objects>
+                <viewController id="wlQ-ma-DiF" customClass="TableViewController" customModule="QRreader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G9o-M5-2NC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="washroom.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="cYk-ye-7M1">
+                                <rect key="frame" x="16" y="170" width="156" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quiet-study.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="Jwd-p7-egm">
+                                <rect key="frame" x="203" y="170" width="156" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="room1427.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="aaG-EL-HZZ">
+                                <rect key="frame" x="16" y="423" width="156" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="elevator.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="nCZ-Tt-6db">
+                                <rect key="frame" x="203" y="422" width="156" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bI-Nb-4Xc">
+                                <rect key="frame" x="31" y="343" width="141" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Washroom">
+                                    <color key="titleColor" red="0.25490196078431371" green="0.70196078431372544" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="washAction:" destination="wlQ-ma-DiF" eventType="touchUpInside" id="aM8-uA-IfT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7M5-P1-rpM">
+                                <rect key="frame" x="205" y="343" width="155" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Quiet Study">
+                                    <color key="titleColor" red="0.25490196079999999" green="0.70196078429999997" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="quietAction:" destination="wlQ-ma-DiF" eventType="touchUpInside" id="JF0-1x-ugl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yb7-R6-M6N">
+                                <rect key="frame" x="237" y="598" width="107" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Elevator">
+                                    <color key="titleColor" red="0.25490196079999999" green="0.70196078429999997" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="elevatorAction:" destination="wlQ-ma-DiF" eventType="touchUpInside" id="o38-H7-xs2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5M4-ju-EGr">
+                                <rect key="frame" x="28" y="596" width="148" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Room 1427">
+                                    <color key="titleColor" red="0.25490196079999999" green="0.70196078429999997" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="room1427Action:" destination="wlQ-ma-DiF" eventType="touchUpInside" id="nfs-OA-4F2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose a Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cvn-Ii-UWN">
+                                <rect key="frame" x="28" y="78" width="326" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="38"/>
+                                <color key="textColor" red="0.054901960784313725" green="0.4392156862745098" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="FKV-tG-QiV"/>
+                    </view>
+                    <connections>
+                        <outlet property="elevatorImg" destination="nCZ-Tt-6db" id="saH-nd-5dd"/>
+                        <outlet property="locationToGo" destination="Cvn-Ii-UWN" id="qnJ-fH-fkp"/>
+                        <outlet property="quietImg" destination="Jwd-p7-egm" id="5jk-0O-XCh"/>
+                        <outlet property="room1427Img" destination="aaG-EL-HZZ" id="TF2-wd-yBM"/>
+                        <outlet property="washImg" destination="cYk-ye-7M1" id="yp5-FI-NWb"/>
+                        <segue destination="TQm-cO-DLr" kind="show" identifier="toAR" id="hfL-my-FUW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HHr-J7-yZa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="709.60000000000002" y="836.13193403298362"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="elevator.JPG" width="3022" height="3026"/>
+        <image name="quiet-study.JPG" width="2977" height="2943"/>
+        <image name="room1427.JPG" width="2959" height="2940"/>
+        <image name="square.png" width="276" height="276"/>
+        <image name="washroom.JPG" width="2996" height="3007"/>
+    </resources>
+</document>
