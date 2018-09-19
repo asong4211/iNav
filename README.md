@@ -9,4 +9,4 @@ An Augmented Reality iOS application developed with Swift to assist new students
 ### Screenshots
 <img src="https://github.com/asong4211/iNav/blob/master/QRreader/Device%20Framed%20Screenshots/IMG_3B9D660C1395-1.jpeg" width="288" /> <img src="https://github.com/asong4211/iNav/blob/master/QRreader/Device%20Framed%20Screenshots/IMG_5019.JPG" width="288" /> <img src="https://github.com/asong4211/iNav/blob/master/QRreader/Device%20Framed%20Screenshots/IMG_5015.JPG" width="288" /> 
 
-### Created By: Aiden Song, Aditya Bhatia
+### Created By: [Aiden Song](https://github.com/asong4211), [Aditya Bhatia](https://github.com/adbht)
